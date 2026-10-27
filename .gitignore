@@ -1,0 +1,12 @@
+.tools/
+.build/
+__pycache__/
+*.pyc
+.DS_Store
+xcuserdata/
+DerivedData/
+~$*
+*.tmp.xlsx
+
+# Primera version bloqueada por la sesion COM; libro final: Boleta_Pago_Semana09.xlsx
+/Excel/Boleta_Semana09.xlsx
