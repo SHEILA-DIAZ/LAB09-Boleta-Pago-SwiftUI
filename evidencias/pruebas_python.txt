@@ -9,6 +9,6 @@ test_swift (__main__.Verificacion) ... ok
 test_xcode_referencias (__main__.Verificacion) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.085s
+Ran 9 tests in 0.082s
 
 OK (skipped=1)

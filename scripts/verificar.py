@@ -42,6 +42,10 @@ class Verificacion(unittest.TestCase):
         w = openpyxl.load_workbook(LIBRO, data_only=False)
         self.assertEqual(w.sheetnames,['Parámetros','Boleta','Casos','Explicación'])
         for row in range(17,31): self.assertEqual(w['Boleta'][f'B{row}'].data_type,'f')
+        # La columna de fórmulas visibles debe usar la representación XLSX que
+        # Excel espera para FORMULATEXT; comprobar solo los montos no detecta esto.
+        for row in range(17,31):
+            self.assertEqual(w['Boleta'][f'C{row}'].value,f'=_xlfn.FORMULATEXT(B{row})')
         for row in range(4,4+len(FIXTURES)):
             for col in range(10,24): self.assertEqual(w['Casos'].cell(row,col).data_type,'f')
         self.assertGreaterEqual(len(w['Boleta'].data_validations.dataValidation),8)

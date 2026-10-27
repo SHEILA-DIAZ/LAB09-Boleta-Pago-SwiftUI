@@ -11,6 +11,7 @@ Las evidencias son archivos producidos por herramientas o transcripciones identi
 | `formulas_recalculadas.json` | Resultados realmente evaluados desde fórmulas XLSX por `formulas`; no son la caché ni Excel nativo |
 | `pruebas_python.txt` | Resultado de la suite de integridad, respuestas oficiales y cruces entre motores |
 | `excel_com_intentos.txt` | Intentos fallidos de automatización de Microsoft Excel y HRESULT recibidos |
+| [Revisión del 27/10/2026](revision_2026-10-27.md) | Reejecución de pruebas y corrección del formato de compatibilidad de las fórmulas visibles |
 
 ## Qué se considera validado
 

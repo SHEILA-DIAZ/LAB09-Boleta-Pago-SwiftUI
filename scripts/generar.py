@@ -107,7 +107,9 @@ def extraer_docx(origen):
 def libro(fixtures):
     # XlsxWriter crea el archivo XLSX. write_formula guarda operaciones editables;
     # el valor esperado adicional es solo una caché para previsualización.
-    w = xlsxwriter.Workbook(ROOT / 'Excel' / 'Boleta_Pago_Semana09.xlsx')
+    # FORMULATEXT necesita el prefijo de compatibilidad _xlfn dentro del XLSX.
+    # XlsxWriter lo agrega automáticamente al activar use_future_functions.
+    w = xlsxwriter.Workbook(ROOT / 'Excel' / 'Boleta_Pago_Semana09.xlsx', {'use_future_functions': True})
     w.set_properties({'title': 'Boleta de pago: del sueldo al neto', 'subject': 'Semana 9 · niveles 1 y 2', 'author': 'Equipo Semana 9'})
     w.set_calc_mode('auto')
     title = w.add_format({'bold': True, 'font_size': 19, 'font_color': '#FFFFFF', 'bg_color': '#17365D'})
