@@ -15,6 +15,7 @@ La guía original, sus nueve tablas y la extracción completa están en [referen
 - Cinco respuestas y caso 4: [análisis](docs/analisis.md).
 - Parámetros, fuentes y fechas: [fuentes](docs/fuentes.md).
 - Cobertura de la guía: [matriz de requisitos](docs/requisitos.md).
+- Para entender lo desarrollado desde cero: [explicación del código](docs/explicacion_codigo.md). Los archivos Swift incluyen comentarios en español sobre sus datos, controles, validaciones y cálculos.
 - Exposición: [guion Excel](docs/guion_excel.md) y [guion SwiftUI](docs/guion_app.md).
 - Evidencias reales y pendientes: [registro](evidencias/README.md).
 

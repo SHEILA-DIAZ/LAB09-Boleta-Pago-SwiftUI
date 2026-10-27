@@ -39,6 +39,8 @@ def r(n):
     return n.quantize(D('.01'), rounding=ROUND_HALF_UP)
 
 def calcular(i):
+    # Referencia en Python: obtiene los 14 importes esperados para las pruebas.
+    # El Excel se genera con sus propias fórmulas; no se sustituyen por estos datos.
     sueldo, dias = D(i['sueldo']), D(i['dias'])
     hora = sueldo / 30 / 8
     rem = [r(sueldo / 30 * dias), D('123') if i['hijos'] else D(0),
@@ -56,6 +58,8 @@ def entrada(sueldo, dias=30, hijos=False, sistema='ONP', h25='0', h35='0', adela
                 horas25=h25, horas35=h35, adelantos=adelanto)
 
 def casos():
+    # Los cuatro primeros escenarios vienen de la guía. El resto ayuda a detectar
+    # errores de redondeo, alternativas de pensión y casos límite.
     items = [
         ('Caso 1', entrada(2500)),
         ('Caso 2', entrada(1800, 27, True)),
@@ -76,6 +80,8 @@ def casos():
     return [dict(name=n, input=i, expected=[f'{x:.2f}' for x in calcular(i)]) for n, i in items]
 
 def extraer_docx(origen):
+    # Un DOCX es un ZIP de archivos XML. Leemos párrafos y tablas en su orden
+    # original y conservamos la copia y su hash para identificar la referencia.
     destino = ROOT / 'referencias' / 'Actividad_Grupo_B.docx'
     shutil.copy2(origen, destino)
     ns = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
@@ -99,6 +105,8 @@ def extraer_docx(origen):
     (ROOT / 'evidencias' / 'documento.json').write_text(json.dumps(dict(origen=str(origen), sha256=hashlib.sha256(destino.read_bytes()).hexdigest(), tablas=tablas, nota='DOCX sin contador de páginas en metadatos; lectura íntegra del XML y partes auxiliares'), indent=2), encoding='utf-8')
 
 def libro(fixtures):
+    # XlsxWriter crea el archivo XLSX. write_formula guarda operaciones editables;
+    # el valor esperado adicional es solo una caché para previsualización.
     w = xlsxwriter.Workbook(ROOT / 'Excel' / 'Boleta_Pago_Semana09.xlsx')
     w.set_properties({'title': 'Boleta de pago: del sueldo al neto', 'subject': 'Semana 9 · niveles 1 y 2', 'author': 'Equipo Semana 9'})
     w.set_calc_mode('auto')
@@ -282,6 +290,8 @@ objects = {{
 <Scheme LastUpgradeVersion="1600" version="1.3"><BuildAction parallelizeBuildables="YES" buildImplicitDependencies="YES"><BuildActionEntries><BuildActionEntry buildForTesting="YES" buildForRunning="YES" buildForProfiling="YES" buildForArchiving="YES" buildForAnalyzing="YES"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="{ids(5)}" BuildableName="BoletaPago.app" BlueprintName="BoletaPago" ReferencedContainer="container:BoletaPago.xcodeproj"/></BuildActionEntry></BuildActionEntries></BuildAction><LaunchAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.IDEFoundation.Launcher.LLDB" launchStyle="0" useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" debugDocumentVersioning="YES" debugServiceExtension="internal" allowLocationSimulation="YES"><BuildableProductRunnable runnableDebuggingMode="0"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="{ids(5)}" BuildableName="BoletaPago.app" BlueprintName="BoletaPago" ReferencedContainer="container:BoletaPago.xcodeproj"/></BuildableProductRunnable></LaunchAction><ProfileAction buildConfiguration="Release" shouldUseLaunchSchemeArgsEnv="YES" savedToolIdentifier="" useCustomWorkingDirectory="NO" debugDocumentVersioning="YES"/><AnalyzeAction buildConfiguration="Debug"/><ArchiveAction buildConfiguration="Release" revealArchiveInOrganizer="YES"/></Scheme>''',encoding='utf-8')
 
 def main():
+    # Punto de entrada del generador: prepara carpetas, referencias opcionales,
+    # casos, Excel y proyecto Xcode. Este paso no ejecuta la app ni Excel nativo.
     for path in ['Excel','Tests','evidencias','referencias','docs']:
         (ROOT/path).mkdir(exist_ok=True)
     origen=Path(sys.argv[1]) if len(sys.argv)>1 else None

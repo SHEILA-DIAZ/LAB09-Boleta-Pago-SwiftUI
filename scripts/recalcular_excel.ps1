@@ -1,3 +1,6 @@
+# Prueba opcional para una sesión funcional de Microsoft Excel en Windows.
+# Abre una instancia oculta, recalcula y compara las mismas entradas del modelo.
+# Si Office no responde, registra el error; no simula un recálculo exitoso.
 $ErrorActionPreference = 'Stop'
 $raizLaboratorio = Split-Path -Parent $PSScriptRoot
 $archivoBoleta = Join-Path $raizLaboratorio 'Excel\Boleta_Pago_Semana09.xlsx'

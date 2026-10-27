@@ -14,6 +14,7 @@ Entrega individual de Sheila: **Boleta de pago: del sueldo al neto**. Los nivele
 | Explicación paso a paso de las fórmulas | Hoja **Explicación** del Excel y [guion Excel](docs/guion_excel.md) |
 | Guion para explicar la aplicación | [Guion SwiftUI](docs/guion_app.md) |
 | Orden para presentar ambas partes tú sola | [Exposición individual](docs/exposicion_individual.md) |
+| Explicación sencilla del código, paso a paso | [Cómo funciona el código](docs/explicacion_codigo.md) |
 | Instrucciones de ejecución y organización | [README](README.md) |
 | Lista de requisitos del profesor y su cobertura | [Matriz de requisitos](docs/requisitos.md) |
 | Pruebas realizadas, evidencias y pendientes | [Registro de evidencias](evidencias/README.md) |

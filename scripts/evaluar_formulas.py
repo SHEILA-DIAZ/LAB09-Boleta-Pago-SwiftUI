@@ -11,6 +11,9 @@ import formulas
 fixtures = json.loads((ROOT/'Tests/fixtures.json').read_text(encoding='utf-8'))
 model = formulas.ExcelModel().loads(str(ROOT/'Excel/Boleta_Pago_Semana09.xlsx')).finish()
 
+# Este motor lee las fórmulas del archivo. No toma como prueba los importes
+# que XlsxWriter dejó almacenados para previsualizar el libro sin recalcularlo.
+
 def key(hoja, celda):
     return f"'[Boleta_Pago_Semana09.xlsx]{hoja.upper()}'!{celda}"
 
