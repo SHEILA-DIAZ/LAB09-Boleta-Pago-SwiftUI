@@ -1,0 +1,21 @@
+Ejecución real: 26/10/2026, Windows x86_64.
+Comando: swift run VerificarBoleta
+Versión: Swift 6.4 (swift-6.4-RELEASE), Target x86_64-unknown-windows-msvc.
+
+Build complete! (34.46 secs)
+OK: 276 comprobaciones; 16 casos. Ver evidencias/swift_resultados.json
+Código de salida: 0.
+
+Advertencias emitidas por el toolchain instalado:
+- Referencia a wchar_t encontrada en SwiftShims en lugar de _Builtin_stddef,
+  recuperada por el compilador.
+- No se pudo crear enlace simbólico .build/debug en Windows.
+
+Las advertencias no impidieron compilar ni ejecutar el verificador. Este comando
+compila BoletaCore y VerificarBoleta, no SwiftUI ni el target de aplicación iOS.
+Los resultados estructurados por concepto están en swift_resultados.json.
+
+Comprobación adicional real de sintaxis:
+swift -frontend -parse App\ContentView.swift App\BoletaPagoApp.swift App\Model\Boleta.swift
+Código de salida: 0, sin mensajes. Solo parseo: no verifica tipos de SwiftUI,
+SDK iOS, enlazado, recursos, firma ni ejecución en simulador.

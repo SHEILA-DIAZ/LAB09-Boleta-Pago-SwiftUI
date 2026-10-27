@@ -1,0 +1,14 @@
+Registro de intentos reales del 26/10/2026 (transcripción de la salida de herramientas).
+
+1. powershell -NoProfile -ExecutionPolicy Bypass -File scripts\recalcular_excel.ps1
+   Aislamiento normal: no se pudo recuperar el generador COM de Excel.Application.
+   HRESULT 0x80070520: Una sesión de inicio especificada no existe. Es posible que haya finalizado.
+
+2. Mismo comando fuera del aislamiento, autorizado por el usuario:
+   Excel devolvió HRESULT 0x80010001 (RPC_E_CALL_REJECTED).
+   El mensaje visible se produjo también durante Close en el bloque finally.
+   No se generó excel_recalculado.json ni se atribuye recálculo nativo exitoso.
+
+El script fue mejorado para conservar el primer error y evitar que un fallo de Close
+oculte la causa inicial en una futura ejecución. No se volvió a ejecutar sin un cambio
+de estado de la sesión de Office. No se cerraron forzosamente procesos de Excel del usuario.

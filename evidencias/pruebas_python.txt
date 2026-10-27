@@ -1,0 +1,14 @@
+test_cache_excel (__main__.Verificacion) ... ok
+test_caso4 (__main__.Verificacion) ... ok
+test_docx_preservado (__main__.Verificacion) ... ok
+test_estructura_y_formulas (__main__.Verificacion) ... ok
+test_excel_nativo (__main__.Verificacion) ... skipped 'Excel COM no ejecutado; solo cache verificada'
+test_formulas_recalculadas (__main__.Verificacion) ... ok
+test_oficiales (__main__.Verificacion) ... ok
+test_swift (__main__.Verificacion) ... ok
+test_xcode_referencias (__main__.Verificacion) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.085s
+
+OK (skipped=1)
