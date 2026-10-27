@@ -27,13 +27,13 @@ Documento leído íntegramente mediante ZIP/XML, incluidas nueve tablas; copia o
 | 6 | Nivel 3 reto opcional | Documentado y no implementado: identidad ficticia en encabezado, comparación ONP/AFP simultánea en pantalla, renta de quinta |
 | 7 | Casos 1, 2, 3 oficiales y 4 calculado | `Tests/fixtures.json`, hoja `Casos`, `docs/analisis.md` |
 | 8 | Cinco respuestas razonadas | `docs/analisis.md`; incluye ONP alternativa, costo, 30 días, HE y oferta real |
-| 9 | Caso propio por alumno, sueldo de oferta ≥ RMV, URL y fecha | Un caso propio documentado; segundo participante pendiente de datos reales |
+| 9 | Caso propio por alumno, sueldo de oferta ≥ RMV, URL y fecha | Entrega individual: un caso propio documentado para Sheila |
 | 8–9 | Comparar con dos compañeros | Espacio en Excel y metodología; pendiente de resultados externos; sensibilidades no atribuidas a compañeros |
 | 9 | Verificar parámetros variables con fuentes | Fuentes fechadas, SBS consultada; alcance de consulta RMV explícito |
 | 9 | Sin DNI/RUC reales; texto “Boleta de ejemplo” | Pantalla sin identificadores personales; solo sueldo de oferta |
 | 10 | Structs, clase Boleta, diccionario AFP y arrays | `App/Model/Boleta.swift` |
-| 10 | README, evidencias y commits por hito | README y evidencias reales; historial local si permite el entorno; sin push |
+| 10 | README, evidencias y commits por hito | README y evidencias reales; commits por hito y publicación en el repositorio autorizada por Sheila |
 | 10 | Cuatro hojas, fórmulas reales y visibles | `Parámetros`, `Boleta`, `Casos`, `Explicación`; `FORMULATEXT` junto a cálculos y explicación de las 14 fórmulas |
-| Cierre | Dos participantes, uno explica Excel y otro app | Dos guiones separados en `docs/` |
+| Cierre | Dos participantes, uno explica Excel y otro app | Guía original propone dos; Sheila hará entrega individual con dos partes consecutivas. No se presume excepción aprobada por el docente |
 
 Límites operativos añadidos y documentados: montos hasta S/ 100,000,000, horas hasta 10,000 por tramo y hasta dos decimales para importes y horas. Evitan desbordamientos y hacen reproducible la comparación; no alteran los casos del profesor. No se impone RMV como mínimo al formulario porque la validación solicitada es sueldo mayor que cero; sí se exige ≥ RMV para el caso de oferta. Días se exigen enteros. El neto puede ser negativo si el adelanto supera el disponible: se informa en pantalla, no se recorta a cero.

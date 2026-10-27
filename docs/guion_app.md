@@ -1,4 +1,4 @@
-# Guion de exposición · Participante 2: SwiftUI
+# Guion de exposición individual · Parte 2: SwiftUI
 
 Duración sugerida: 7–9 minutos. La demostración del simulador requiere macOS y Xcode; ensayar los pasos antes de exponer. No presentar capturas ni ejecuciones que aún no se hayan realizado.
 

@@ -50,7 +50,7 @@ Neto / remuneraciones = **3,045 / 3,500 × 100 = 87.00%**. Aquí sueldo básico 
 
 Con tasas proporcionales y sin adelantos, cambiar solo el sueldo casi no cambia la proporción; las diferencias entre estas filas proceden del sistema y las comisiones. Los redondeos pueden variar el último decimal. En una planilla real, la renta de quinta podría cambiar esta proporción.
 
-**Pendiente externo:** la guía pide contrastar con dos compañeros que hayan usado otros sueldos y un caso propio por alumno. No se han recibido sus ofertas ni sus boletas. Los escenarios anteriores son sensibilidades calculadas, no resultados aportados por compañeros. El espacio al final de `Casos` permite registrar alias, enlace y fecha de cada oferta, bruto y neto. Al recibirlos, comparar `neto/bruto × 100` y explicar diferencias por pensión, hijos, días, sobretiempo y adelantos. Para el segundo participante aún debe registrarse su caso propio real; no se le atribuye uno inventado.
+**Entrega individual:** Sheila presenta un caso propio y dos escenarios de sensibilidad; no hay un segundo integrante cuyo caso deba añadirse. La guía original pide contrastar con dos compañeros: esa interacción no se ha realizado y las sensibilidades no se presentan como boletas aportadas por otras personas. El espacio al final de `Casos` se conserva por fidelidad a la pregunta original. Si el docente mantiene esa comparación en la entrega individual, podrán añadirse allí los datos reales; se comparará `neto/bruto × 100` explicando pensión, hijos, días, sobretiempo y adelantos.
 
 ## Caso 4, desarrollo para revisión del docente
 

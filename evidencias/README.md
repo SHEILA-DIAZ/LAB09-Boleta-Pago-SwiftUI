@@ -42,4 +42,4 @@ El script COM ahora guarda el primer error y protege el cierre de la instancia. 
 
 ## Pendientes externos de análisis
 
-Registrar el caso propio del segundo participante y comparar con dos compañeros que proporcionen oferta, fecha, sueldo y boleta. Los escenarios de sensibilidad incluidos son cálculos del proyecto y no evidencia de trabajos de compañeros. La localización del índice oficial de la RMV no equivale a haber leído íntegramente el decreto individual; el alcance está descrito en `docs/fuentes.md`.
+La entrega será individual: se documenta un caso propio de Sheila y se eliminó el pendiente de un segundo integrante. La comparación con dos compañeros sigue siendo una petición de la guía original; no se ha realizado esa interacción. Los escenarios de sensibilidad incluidos son cálculos del proyecto y no evidencia de trabajos de compañeros. La localización del índice oficial de la RMV no equivale a haber leído íntegramente el decreto individual; el alcance está descrito en `docs/fuentes.md`.

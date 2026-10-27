@@ -1,4 +1,4 @@
-# Guion de exposición · Participante 1: Excel
+# Guion de exposición individual · Parte 1: Excel
 
 Duración sugerida: 7–9 minutos. Tener abierto `Excel/Boleta_Pago_Semana09.xlsx` y `docs/analisis.md`. No modificar el perfil de referencia antes de mostrar los resultados oficiales.
 
@@ -38,7 +38,7 @@ Intentar días 31, sueldo cero o HE negativas y mostrar el rechazo. Explicar que
 
 “Con caso 3, ONP deja 2,630.11 y AFP Ejemplo 2,631.73: diferencia 1.62. Eso no basta para elegir sistema de jubilación. El costo solicitado para la empresa es 3,545.77 y el neto representa 74.22%. Con caso 2 a 30 días el neto sube a 1,673.01; de los 180 adicionales se retienen 23.40 para ONP. Las horas extras son aproximadamente 4% del total remunerado.”
 
-“La oferta propia publica entre 3,500 y 4,000; elegimos 3,500. Con ONP y nuestros supuestos el neto es 3,045, un 87%. Las otras dos filas son sensibilidades, no boletas enviadas por compañeros. La comparación real y el caso propio del segundo alumno se completan al recibir sus datos.”
+“La oferta propia publica entre 3,500 y 4,000; tomé 3,500. Con ONP y estos supuestos el neto es 3,045, un 87%. Presento el trabajo individualmente. Las otras dos filas son sensibilidades para explicar las diferencias; no son boletas enviadas por compañeros.”
 
 ## Preguntas previsibles
 

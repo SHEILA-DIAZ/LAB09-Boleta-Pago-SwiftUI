@@ -2,9 +2,13 @@
 
 Laboratorio de Programación en Móviles Avanzado, guía del profesor León `Actividad_Grupo_B.docx`. Incluye aplicación SwiftUI de una pantalla, modelo Swift separado, libro Excel de cuatro hojas y análisis. **Niveles 1 y 2 desarrollados; nivel 3 opcional, no implementado.**
 
+**Entrega individual de Sheila.** Una misma expositora presenta Excel y SwiftUI, usando los dos guiones como partes consecutivas. Consulta el [orden para exponer sola](docs/exposicion_individual.md). La guía original propone dos participantes; esta organización individual no supone una excepción aprobada por el docente.
+
 La guía original, sus nueve tablas y la extracción completa están en [referencias](referencias/guia_extraida.md). Se revisó todo el contenido del DOCX; su contador de páginas no figura en metadatos. El proyecto se creó en `LAB09-Boleta-Pago-SwiftUI`, que inicialmente solo contenía `.git`, sin desarrollo previo ni commits.
 
 ## Abrir los entregables
+
+**Consulta [ENTREGABLES.md](ENTREGABLES.md) para encontrar todo lo solicitado, incluido el enlace de descarga del Excel y el documento original del profesor.**
 
 - Aplicación iOS: [BoletaPago.xcodeproj](BoletaPago.xcodeproj/project.pbxproj).
 - Excel funcional: [Boleta_Pago_Semana09.xlsx](Excel/Boleta_Pago_Semana09.xlsx).
@@ -123,6 +127,6 @@ evidencias/                  Resultados reales y verificaciones pendientes
 
 ## Pendientes de entrega que requieren otras personas o equipos
 
-Ejecutar y revisar la app en Xcode; obtener capturas reales de casos 1–4 y de una validación; verificar visualmente el libro en una sesión funcional de Excel; completar el caso propio del segundo participante y comparar con dos compañeros usando sus ofertas y resultados reales. Las sensibilidades incluidas no se atribuyen a compañeros.
+Ejecutar y revisar la app en Xcode; obtener capturas reales de casos 1–4 y de una validación; verificar visualmente el libro en una sesión funcional de Excel. Al ser entrega individual, se incluye un caso propio y no se requiere preparar el caso de un segundo integrante. La pregunta original de comparación con dos compañeros se conserva identificada: las sensibilidades incluidas permiten comparar escenarios, pero no se atribuyen a compañeros ni se presentan como cumplimiento de esa interacción.
 
-El repositorio mantiene el remoto `https://github.com/SHEILA-DIAZ/LAB09-Boleta-Pago-SwiftUI`. Se preparan hitos locales; **no se ha hecho push a GitHub**. La publicación remota queda para una instrucción posterior.
+Repositorio de destino: [SHEILA-DIAZ/LAB09-Boleta-Pago-SwiftUI](https://github.com/SHEILA-DIAZ/LAB09-Boleta-Pago-SwiftUI). Los commits conservan los hitos del modelo, interfaz y entregables. Sheila autorizó subir la entrega y su adaptación individual a este repositorio.
